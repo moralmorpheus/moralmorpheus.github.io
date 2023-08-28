@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    -webkit-fontsmoothing: antialiased;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+        .background {
+            background-image: url('./illustration.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            filter: grayscale(0.0);
+        }
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: white;
+    line-height: 1.5;
+}
+
+mark {
+    background-color: white;
+    box-shadow: 0 0 6px -2px rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+}
+
+p {
+    font-size: 1.65rem;
+    font-weight: 400;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Style to position the image in the top right corner */
+.corner-image {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    width: 290px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    /* Adjust this value if needed */
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    padding: 1rem 1rem 0.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: 0;
+    text-align: right;
+}
+
+.founded {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    line-height: 2;
+}
+
+.founded a {
+    display: inline-flex;
+    color: inherit;
+}
+
+.twitter {
+    width: 1rem;
+}
+
+.illustrated {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 300;
+}
+
+
+#revue-embed form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    -webkit-appearance: none;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+::placeholder {
+    color: black;
+}
+
+.revue-form-field {
+    width: 20rem;
+}
+
+@media screen and (max-width: 1380px) {
+    html {
+        font-size: 12px;
+    }
+
+    main {
+        max-width: 900px;
+    }
+
+    .founded {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        display: block;
+        overflow: auto;
+        height: auto;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    main {
+        padding: 4rem 2rem 2rem;
+    }
+
+    section {
+        margin-bottom: 6rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.6;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.7;
+    }
+
+    #revue-embed form {
+        flex-direction: column;
+    }
+
+    .revue-form-field {
+        width: 20rem;
+        max-width: 90%;
+    }
+
+    input {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    footer {
+        position: relative;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0;
+    }
+}
+
+<!-- White: #fdf4eb, Red: #d06464, Dark Red: #a92727-->
